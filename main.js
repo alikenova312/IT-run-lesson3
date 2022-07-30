@@ -36,25 +36,37 @@
 // console.log(car2)
 
 
-let car = {
-    'model car': 'bmw',
-    color: 'black',
-    year: 2022,
-    turbo: true,
-    wheels: {
-        size: 245,
-        radius: 17,
-        type: 'winter'
-    }
-}
+// let car = {
+//     'model car': 'bmw',
+//     color: 'black',
+//     year: 2022,
+//     turbo: true,
+//     wheels: {
+//         size: 245,
+//         radius: 17,
+//         type: 'winter'
+//     }
+// }
 
-console.log(car.toString()) //неправильнй вариант
-console.log(JSON.stringify(car)) //
+// console.log(car.toString()) //неправильнй вариант
+// console.log(JSON.stringify(car)) //
 //правильные варианты с JCON
-console.log(typeof JSON.stringify(car)) //
+// console.log(typeof JSON.stringify(car)) //
 
-let a = `{"'model car': 'bmw',color: 'black',year: 2022,turbo: true,wheels: {size: 245, radius: 17,   type: 'winter'"}}`
+// let a = `{"'model car': 'bmw',color: 'black',year: 2022,turbo: true,wheels: {size: 245, radius: 17,   type: 'winter'"}}`
 
-console.log(JSON.parse(a))
+// console.log(JSON.parse(a))
+
+
+let arr = [1, 2, 3, 4, 5];
+
+arr[0] = 5
+delete arr[0]
+arr[5] = 7
+arr[100] = 7
+
+
+console.log(arr)
+console.log(arr.length)
 
 
